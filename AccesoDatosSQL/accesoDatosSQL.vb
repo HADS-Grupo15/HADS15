@@ -36,13 +36,15 @@ Public Class accesodatosSQL
                                     ByVal apellido2 As String, ByVal numconfir As Integer,
                                     ByVal tipo As String, ByVal pass As String) As String
 
+        Dim apellidos As String
 
-        Dim st = "insert into Usuarios (email,nombre,apellido1,apellido2,numconfir,confirmado,tipo,pass) values (
+        apellidos = apellido1 & " " & apellido2
+
+        Dim st = "insert into Usuarios (email,nombre,apellidos,numconfir,confirmado,tipo,pass) values (
         
         '" & email & "',
         '" & nombre & "',
-        '" & apellido1 & "',
-        '" & apellido2 & "',
+        '" & apellidos & "',
         '" & numconfir & "',
         '0',
         '" & tipo & "',

@@ -11,32 +11,32 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class WebForm1
+Partial Public Class TareasAlumno
     
     '''<summary>
-    '''Control form1.
+    '''Control formTareaGen.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
+    Protected WithEvents formTareaGen As Global.System.Web.UI.HtmlControls.HtmlForm
     
     '''<summary>
-    '''Control PasswordRecovery1.
+    '''Control DropDownList1.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents PasswordRecovery1 As Global.System.Web.UI.WebControls.PasswordRecovery
+    Protected WithEvents DropDownList1 As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''Control AppearanceEditorPart1.
+    '''Control GridViewTareas.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents AppearanceEditorPart1 As Global.System.Web.UI.WebControls.WebParts.AppearanceEditorPart
+    Protected WithEvents GridViewTareas As Global.System.Web.UI.WebControls.GridView
 End Class

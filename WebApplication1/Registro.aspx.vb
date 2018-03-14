@@ -17,6 +17,8 @@ Public Class Registro
 
         Dim res = insertar(txtmail.Text, txtNom.Text, txtApe.Text, txtApe2.Text, numConf, rol.Text, txtPass.Text)
 
+        'llamar a la funcion que genera un nuevo mail pasandole un nuevo codigo por parametro
+
         txtConfirmar.Text = res
 
         cerrarconexion()
