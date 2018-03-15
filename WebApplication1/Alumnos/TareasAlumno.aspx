@@ -18,14 +18,12 @@
         </div>
         <br /><br />
         <div>
-            <asp:GridView ID="GridViewTareas" runat="server" HorizontalAlign="Center" EmptyDataText="No tienes tareas para instanciar" Height="305px" Width="786px">
+            <asp:GridView ID="GridViewTareas" runat="server" HorizontalAlign="Center" EmptyDataText="No hay tareas de esta asignatura" Height="305px" Width="786px" AutoGenerateColumns="False" DataKeyNames="Codigo" >
                 <AlternatingRowStyle BackColor="#aed6f1" />
-                <Columns>
-                    <asp:CommandField ButtonType="Button"  SelectText="Instanciar" ShowCancelButton="False" ShowSelectButton="True" />
-                </Columns>
                 <HeaderStyle BackColor="#2e86c1" />
             </asp:GridView>
         </div>
+        <asp:Label ID="lblStat" runat="server" Text="Label"></asp:Label>
     </form>
 </body>
 </html>

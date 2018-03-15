@@ -22,7 +22,7 @@ Public Class Login
 
         If log = "1" Then
 
-            Session("user") = txtMail.Text
+            Session("UserID") = txtMail.Text
 
             Response.Redirect("Inicio.aspx")
 

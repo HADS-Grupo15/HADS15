@@ -3,6 +3,11 @@
 Public Class InsertarTarea
     Inherits System.Web.UI.Page
 
+    Dim conexion As SqlConnection = New SqlConnection(
+        "Server=tcp: hads15iu.database.windows.net,1433;Initial Catalog=HADS-15-Tareas;Persist Security Info=False;
+                                                       User ID = opalomo001@hads15iu;Password=Freetanga69;MultipleActiveResultSets=False;Encrypt=True;
+                                                        TrustServerCertificate=False;Connection Timeout=30;")
+
     Dim dapTareasProfesor As New SqlDataAdapter()
     Dim dtsTareasProfesor As New DataSet
     Dim tblTareasProfesor As New DataTable
