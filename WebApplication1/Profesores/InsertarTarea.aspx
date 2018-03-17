@@ -51,9 +51,6 @@
         </div>
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             <asp:Button ID="Button1" runat="server" Text="Crear Tarea"  style="border-radius:3px" BackColor="#0099FF" BorderColor="#0033CC" BorderStyle="Double" ForeColor="White" Height="35px"/>
-            <br />
-            <asp:Label ID="LblError" Text=" " runat="server" ForeColor="Red"></asp:Label>
-            <asp:Label ID="Label6" Text=" " runat="server" ForeColor="Red"></asp:Label>
             </div>
     </form>
 </body>

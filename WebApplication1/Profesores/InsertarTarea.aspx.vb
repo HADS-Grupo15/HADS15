@@ -74,11 +74,19 @@ Public Class InsertarTarea
 
             dtsTareasProfesor.AcceptChanges()
 
-            LblError.Text = "iiiiiepa"
+            'que muestre una ventana  y al acepptar redireccione!!!!NO FUNCIONA! EL RESPONSE REDIRECT SE LO COME
+
+            Page.ClientScript.RegisterStartupScript(Me.GetType(), "PopupScript", "alert('¡Tarea creada!')", True)
+
+            Response.Redirect("~/Profesores/Profesor.aspx")
+
 
         Catch
 
-            LblError.Text = "Error al intentar meterla a la base de datos"
+            'ventana que muestre el error(?)
+
+            Page.ClientScript.RegisterStartupScript(Me.GetType(), "PopupScript", "alert('¡Ha ocurrido un error!')", True)
+
 
         End Try
 
@@ -97,8 +105,6 @@ Public Class InsertarTarea
         Session("TareasProfesor") = dtsTareasProfesor
 
         Session("AdapterTareasProfesor") = dapTareasProfesor
-
-        Label6.Text = "jujiu"
 
     End Sub
 
