@@ -31,13 +31,15 @@ Public Class TareasAlumno
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
-        Session("UserID") = "pepe@ikasle.ehu.es"
+        Session("UserID") = "jose@ikasle.ehu.es"
 
         If Page.IsPostBack Then
 
             dtsAsg = Session("Asignaturas")
 
             dtsTareas = Session("Tareas")
+
+            lblStat.Text = "Volvemos"
 
         Else
 
@@ -71,7 +73,7 @@ Public Class TareasAlumno
                                              TareasGenericas.HEstimadas,TareasGenericas.TipoTarea 
                                              FROM TareasGenericas WHERE TareasGenericas.CodAsig='" & DropDownList1.SelectedItem.Value & "' 
                                              AND TareasGenericas.Explotacion='True' 
-                                             AND TareasGenericas.Codigo NOT IN (
+                                             AND TareasGenericas.Codigo NOT IN ( 
                                                 SELECT EstudiantesTareas.CodTarea 
                                                 FROM EstudiantesTareas INNER JOIN TareasGenericas ON EstudiantesTareas.CodTarea = TareasGenericas.Codigo 
                                                 WHERE EstudiantesTareas.Email='" & Session("UserID") & "' AND 
@@ -92,6 +94,9 @@ Public Class TareasAlumno
             Session("Tareas") = dtsTareas
 
             Session("AdapterTareas") = adapTareas
+
+            lblStat.Text = dvTareas.Count
+
 
         End If
 
@@ -115,17 +120,23 @@ Public Class TareasAlumno
 
         dtsTareas.Clear()
 
+        Label1.Text = "Se ha borrado lo anterior"
+
         adapTareas.Fill(dtsTareas, "Tareas")
 
         dtblTareas = dtsTareas.Tables("Tareas")
 
-        dvTareas = dtsTareas.Tables(0).DefaultView
+        dvTareas = dtsTareas.Tables(0).DefaultView 'i sigue sin funcionar cambiar aqui lo que queremos filtrar
 
-        GridViewTareas.DataSource = dvTareas
+        GridViewTareas.DataSource = dtblTareas
 
         GridViewTareas.DataBind()
 
+        ' GridViewTareas.
+
         Session("AdapterTareas") = adapTareas
+
+        lblStat.Text = dvTareas.Count
 
     End Sub
 
