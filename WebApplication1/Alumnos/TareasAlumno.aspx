@@ -14,12 +14,12 @@
     <form id="formTareaGen" runat="server"  style="text-align: center">
         <div>
             <p>Selecciona la asignatura</p>           
-            <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True"/>         
+            <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" Height="16px"/>         
         </div>
         <br /><br />
         <div>
             <asp:GridView ID="GridViewTareas" runat="server" HorizontalAlign="Center" EmptyDataText="No hay tareas de esta asignatura" 
-                Height="305px" Width="786px" AutoGenerateColumns="False" DataKeyNames="Codigo" >
+                Height="305px" Width="786px" DataKeyNames="Codigo" AllowSorting="True" AutoGenerateSelectButton="True">
                 <AlternatingRowStyle BackColor="#aed6f1" />
                 <HeaderStyle BackColor="#2e86c1" />
             </asp:GridView>
@@ -27,10 +27,6 @@
         <div>
             
         </div>
-        <br /><br />
-        <asp:Label ID="lblStat" runat="server" Text="Label"></asp:Label>
-        <br />
-        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
     </form>
 </body>
 </html>
