@@ -15,4 +15,14 @@
 
     End Sub
 
+    Protected Sub ImageButton1_Click(sender As Object, e As ImageClickEventArgs) Handles ImageButton1.Click
+
+        Response.Redirect("./Profesor.aspx")
+
+    End Sub
+
+    Protected Sub ImageButton2_Click(sender As Object, e As ImageClickEventArgs) Handles ImageButton2.Click
+
+    End Sub
+
 End Class

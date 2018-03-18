@@ -5,14 +5,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <title>Tareas</title>
 </head>
 <body>
     <div style="text-align:center;background-color:Highlight;">
         <h1 style="color:lightcyan">TAREAS DE <asp:Label ID="Label1" runat="server" Text=" "></asp:Label></h1>
-    </div><br /><br />
+    </div>
     <form id="formTareas" runat="server">
-            <div style="text-align:center;font-size:25px">
+     <div style="width:17%; float:left;text-align:right;">
+        <asp:ImageButton ID="ImageButton1" runat="server" Height="50px" ImageUrl="https://i.imgur.com/hxHRLGM.png" Width="69px" ForeColor="#0099FF" />
+    </div>
+    <div style="width:17%; float:right;text-align:left;">
+        <asp:ImageButton ID="ImageButton2" runat="server" Height="53px" ImageUrl="https://cdn2.iconfinder.com/data/icons/snipicons/500/logout-256.png" Width="57px" />
+    </div>
+        <br /><br /><br />
+     <div style="text-align:center;font-size:25px">
          <asp:Label ID="Label2" runat="server" Text="Seleccione una asignatura:"></asp:Label><br /><br />
          <asp:DropDownList ID="DropDownList1" runat="server" Height="27px" Width="95px" DataSourceID="SqlDataSource1" DataTextField="codigo" DataValueField="codigo" AutoPostBack="true"></asp:DropDownList><br />
            <br />       
