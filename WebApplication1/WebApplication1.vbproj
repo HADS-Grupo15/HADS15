@@ -69,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Imagenes\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -107,6 +108,7 @@
     <Content Include="CambiarPassword2.aspx" />
     <Content Include="Profesores\InsertarTarea.aspx" />
     <Content Include="Profesores\Profesor.aspx" />
+    <Content Include="Profesores\TareasProfesor.aspx" />
     <Content Include="Registro.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -208,6 +210,13 @@
     </Compile>
     <Compile Include="Profesores\Profesor.aspx.vb">
       <DependentUpon>Profesor.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Profesores\TareasProfesor.aspx.designer.vb">
+      <DependentUpon>TareasProfesor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profesores\TareasProfesor.aspx.vb">
+      <DependentUpon>TareasProfesor.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Registro.aspx.designer.vb">

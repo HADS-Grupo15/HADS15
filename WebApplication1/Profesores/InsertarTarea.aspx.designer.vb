@@ -32,6 +32,15 @@ Partial Public Class InsertarTarea
     Protected WithEvents SqlDataSource1 As Global.System.Web.UI.WebControls.SqlDataSource
     
     '''<summary>
+    '''Control RequiredFieldValidator1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents RequiredFieldValidator1 As Global.System.Web.UI.WebControls.RequiredFieldValidator
+    
+    '''<summary>
     '''Control Label1.
     '''</summary>
     '''<remarks>
@@ -39,6 +48,15 @@ Partial Public Class InsertarTarea
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''Control RequiredFieldValidator4.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents RequiredFieldValidator4 As Global.System.Web.UI.WebControls.RequiredFieldValidator
     
     '''<summary>
     '''Control Label2.
@@ -57,6 +75,15 @@ Partial Public Class InsertarTarea
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Label3 As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''Control RequiredFieldValidator5.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents RequiredFieldValidator5 As Global.System.Web.UI.WebControls.RequiredFieldValidator
     
     '''<summary>
     '''Control Label4.
@@ -113,6 +140,15 @@ Partial Public Class InsertarTarea
     Protected WithEvents TextBox1 As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
+    '''Control RegularExpressionValidator1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents RegularExpressionValidator1 As Global.System.Web.UI.WebControls.RegularExpressionValidator
+    
+    '''<summary>
     '''Control DropDownList4.
     '''</summary>
     '''<remarks>
@@ -122,6 +158,15 @@ Partial Public Class InsertarTarea
     Protected WithEvents DropDownList4 As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
+    '''Control Button2.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Button2 As Global.System.Web.UI.WebControls.Button
+    
+    '''<summary>
     '''Control Button1.
     '''</summary>
     '''<remarks>
@@ -129,22 +174,4 @@ Partial Public Class InsertarTarea
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Button1 As Global.System.Web.UI.WebControls.Button
-    
-    '''<summary>
-    '''Control LblError.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents LblError As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''Control Label6.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents Label6 As Global.System.Web.UI.WebControls.Label
 End Class

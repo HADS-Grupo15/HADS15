@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Profesor
+Partial Public Class TareasProfesor
     
     '''<summary>
     '''Control Label1.
@@ -23,65 +23,83 @@ Partial Public Class Profesor
     Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control columnaIZQ.
+    '''Control formTareas.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents columnaIZQ As Global.System.Web.UI.HtmlControls.HtmlForm
+    Protected WithEvents formTareas As Global.System.Web.UI.HtmlControls.HtmlForm
     
     '''<summary>
-    '''Control LinkButton1.
+    '''Control ImageButton1.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents LinkButton1 As Global.System.Web.UI.WebControls.LinkButton
+    Protected WithEvents ImageButton1 As Global.System.Web.UI.WebControls.ImageButton
     
     '''<summary>
-    '''Control LinkButton2.
+    '''Control ImageButton2.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents LinkButton2 As Global.System.Web.UI.WebControls.LinkButton
+    Protected WithEvents ImageButton2 As Global.System.Web.UI.WebControls.ImageButton
     
     '''<summary>
-    '''Control LinkButton3.
+    '''Control Label2.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents LinkButton3 As Global.System.Web.UI.WebControls.LinkButton
+    Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control LinkButton4.
+    '''Control DropDownList1.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents LinkButton4 As Global.System.Web.UI.WebControls.LinkButton
+    Protected WithEvents DropDownList1 As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''Control LinkButton5.
+    '''Control Button1.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents LinkButton5 As Global.System.Web.UI.WebControls.LinkButton
+    Protected WithEvents Button1 As Global.System.Web.UI.WebControls.Button
     
     '''<summary>
-    '''Control LinkButton6.
+    '''Control SqlDataSource1.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents LinkButton6 As Global.System.Web.UI.WebControls.LinkButton
+    Protected WithEvents SqlDataSource1 As Global.System.Web.UI.WebControls.SqlDataSource
+    
+    '''<summary>
+    '''Control SqlDataSource2.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents SqlDataSource2 As Global.System.Web.UI.WebControls.SqlDataSource
+    
+    '''<summary>
+    '''Control GridView1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents GridView1 As Global.System.Web.UI.WebControls.GridView
 End Class
